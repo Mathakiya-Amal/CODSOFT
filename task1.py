@@ -8,7 +8,6 @@ CORS(app)
 def chat():
     user_input = request.json['message'].lower()
 
-    # Rule-based responses
     if user_input in ["hello", "hi"]:
         response = "Hello! How can I help you?"
     elif "name" in user_input:
