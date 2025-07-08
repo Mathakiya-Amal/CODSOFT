@@ -17,6 +17,15 @@ def chat():
         response = "Goodbye! Have a nice day!"
     else:
         response = "I'm sorry, I didn't understand that."
+        elif "How are you" in user_input:
+        response = "I'm just bot, but i am doing good. What about you?"
+    elif "help" in user_input:
+        response = "Sure, I am here to help you! What do you want."
+    elif "What is codsoft" in user_input or user_input=="codsoft":
+        response = "CodSoft are IT services and IT consultancy that" \
+        " specializes in creating innovative solutions for businesses." \
+        " Codsoft are passionate about technology and believe in the power " \
+        "of software to transform the world."
 
     return jsonify({"reply": response})
 
